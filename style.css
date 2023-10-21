@@ -4,4 +4,40 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: 1px solid black;
+}
+
+body {
+    background-color: #8090a0;
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 1fr 8fr;
+    border: none;
+}
+
+header {
+    grid-column: 2 / -1;
+}
+
+nav {
+    grid-row: 1 / -1;
+    display: flex;
+    flex-direction: column;
+}
+
+.dash-title {
+    display: flex;
+}
+
+.nav-dash {
+    margin-bottom: auto;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+section {
+    background-color: red;
 }
