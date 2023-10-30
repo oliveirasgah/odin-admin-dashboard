@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 body {
@@ -26,7 +26,7 @@ nav {
 }
 
 nav > * {
-    margin: 30px 0;
+    margin: 30px 0 30px 7px;
 }
 
 .dash-title {
@@ -35,6 +35,25 @@ nav > * {
 
 .nav-dash {
     margin-bottom: auto;
+}
+
+.nav-dash > li,
+.nav-general > li {
+    list-style: none;
+}
+
+.nav-dash a,
+.nav-general a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 7px 0;
+    text-decoration: none;
+}
+
+.nav-dash a > img,
+.nav-general a > img {
+    width: 20px;
 }
 
 main {
