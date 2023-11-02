@@ -16,12 +16,19 @@
 
 :root {
     font-family: "SuperMario";
+    font-size: 16px;
     font-weight: 400;
 
-    --nav-backc: #ee3c3c;
+    --nav-backc: #e52521;
+    --nav-hl: #fbd000;
+    --nav-click: #dbb000;
+    --nav-title-color: #f5f5f5;
+    --nav-font-color: #fbd000;
+    --nav-font-hl: #e52521;
 }
 
 body {
+    height: 100vh;
     background-color: #8090a0;
     display: grid;
     grid-template-columns: 1fr 6fr;
@@ -42,11 +49,24 @@ nav {
 }
 
 nav > * {
-    margin: 30px 0 30px 7px;
+    margin: 30px 0;
 }
 
 .dash-title {
     display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 10px;
+}
+
+.dash-title > img {
+    width: 50px;
+}
+
+.dash-title > h1 {
+    font-weight: 700;
+    font-size: 32px;
+    color: var(--nav-title-color);
 }
 
 .nav-dash {
@@ -58,13 +78,31 @@ nav > * {
     list-style: none;
 }
 
+.nav-dash > li:hover,
+.nav-general > li:hover {
+    background-color: var(--nav-hl);
+}
+
+.nav-dash > li:active,
+.nav-general > li:active {
+    background-color: var(--nav-click);
+}
+
 .nav-dash a,
 .nav-general a {
+    color: var(--nav-font-color);
+    font-size: 18px;
+    text-decoration: none;
+
     display: flex;
     align-items: center;
     gap: 5px;
-    padding: 7px 0;
-    text-decoration: none;
+    padding: 7px 0 7px 7px;
+}
+
+.nav-dash a:hover,
+.nav-general a:hover {
+    color: var(--nav-font-hl);
 }
 
 .nav-dash a > img,
@@ -78,7 +116,7 @@ main {
 }
 
 section {
-    background-color: red;
+    background-color: darkblue;
 }
 
 footer {
