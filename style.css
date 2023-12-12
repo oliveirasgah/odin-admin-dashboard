@@ -137,6 +137,7 @@ section {
 .news {
     background-color: var(--news-backc);
     padding: 30px 20px;
+    padding-right: 0;
 }
 
 .news > .board {
