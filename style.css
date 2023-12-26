@@ -1,200 +1,200 @@
 @import url('https://fonts.googleapis.com/css2?family=Afacad&display=swap');
 
 @font-face {
-    font-family: "SuperMario";
-    src:
-        url('font/SuperMario256.woff') format('woff'),
-        url('font/SuperMario256.woff2') format('woff2');
+  font-family: "SuperMario";
+  src:
+    url('font/SuperMario256.woff') format('woff'),
+    url('font/SuperMario256.woff2') format('woff2');
 }
 
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    /* border: 1px solid black; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid black; */
 }
 
 :root {
-    font-family: "SuperMario";
-    font-size: 16px;
-    font-weight: 400;
+  font-family: "SuperMario";
+  font-size: 16px;
+  font-weight: 400;
 
-    /* nav */
-    --nav-backc: #e52521;
-    --nav-hl: #fbd000;
-    --nav-click: #dbb000;
-    --nav-title-color: #f5f5f5;
-    --nav-font-color: #fbd000;
-    --nav-font-hl: #e52521;
+  /* nav */
+  --nav-backc: #e52521;
+  --nav-hl: #fbd000;
+  --nav-click: #dbb000;
+  --nav-title-color: #f5f5f5;
+  --nav-font-color: #fbd000;
+  --nav-font-hl: #e52521;
 
-    /* news */
-    --news-backc: #049cd8;
-    --card-color: #f5f5f5;
-    --card-detail-color: #fbd000;
-    --card-font-family: "Afacad", sans-serif;
+  /* news */
+  --news-backc: #049cd8;
+  --card-color: #f5f5f5;
+  --card-detail-color: #fbd000;
+  --card-font-family: "Afacad", sans-serif;
 
-    /* footer */
-    --footer-backc: #43b047;
-    --footer-font-color: #f5f5f5;
-    --footer-link-color: #000000;
-    --footer-link-hover: #e52521;
+  /* footer */
+  --footer-backc: #43b047;
+  --footer-font-color: #f5f5f5;
+  --footer-link-color: #000000;
+  --footer-link-hover: #e52521;
 }
 
 body {
-    height: 100vh;
-    background-color: #8090a0;
-    display: grid;
-    grid-template-columns: 1fr 6fr;
-    grid-template-rows: 1fr 8fr 0.5fr;
-    border: none;
+  height: 100vh;
+  background-color: #8090a0;
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  grid-template-rows: 1fr 8fr 0.5fr;
+  border: none;
 }
 
 header {
-    grid-column: 2 / -1;
+  grid-column: 2 / -1;
 }
 
 nav {
-    grid-row: 1 / -2;
-    display: flex;
-    flex-direction: column;
+  grid-row: 1 / -2;
+  display: flex;
+  flex-direction: column;
 
-    background-color: var(--nav-backc);
+  background-color: var(--nav-backc);
 }
 
-nav > * {
-    margin: 30px 0;
+nav>* {
+  margin: 30px 0;
 }
 
 .dash-title {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 0 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 10px;
 }
 
-.dash-title > img {
-    width: 50px;
+.dash-title>img {
+  width: 50px;
 }
 
-.dash-title > h1 {
-    font-weight: 700;
-    font-size: 32px;
-    color: var(--nav-title-color);
+.dash-title>h1 {
+  font-weight: 700;
+  font-size: 32px;
+  color: var(--nav-title-color);
 }
 
 .nav-dash {
-    margin-bottom: auto;
+  margin-bottom: auto;
 }
 
-.nav-dash > li,
-.nav-general > li {
-    list-style: none;
+.nav-dash>li,
+.nav-general>li {
+  list-style: none;
 }
 
-.nav-dash > li:hover,
-.nav-general > li:hover {
-    background-color: var(--nav-hl);
+.nav-dash>li:hover,
+.nav-general>li:hover {
+  background-color: var(--nav-hl);
 }
 
-.nav-dash > li:active,
-.nav-general > li:active {
-    background-color: var(--nav-click);
+.nav-dash>li:active,
+.nav-general>li:active {
+  background-color: var(--nav-click);
 }
 
 .nav-dash a,
 .nav-general a {
-    color: var(--nav-font-color);
-    font-size: 18px;
-    text-decoration: none;
+  color: var(--nav-font-color);
+  font-size: 18px;
+  text-decoration: none;
 
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    padding: 7px 0 7px 7px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 7px 0 7px 7px;
 }
 
 .nav-dash a:hover,
 .nav-general a:hover {
-    color: var(--nav-font-hl);
+  color: var(--nav-font-hl);
 }
 
-.nav-dash a > img,
-.nav-general a > img {
-    width: 20px;
+.nav-dash a>img,
+.nav-general a>img {
+  width: 20px;
 }
 
 main {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
 }
 
 section {
-    background-color: darkblue;
+  background-color: darkblue;
 }
 
 .news {
-    background-color: var(--news-backc);
-    padding: 30px 0 30px 20px;
+  background-color: var(--news-backc);
+  padding: 30px 0 30px 20px;
 }
 
-.news > .board {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    height: 100%;
+.news>.board {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 100%;
 }
 
-.board > .card {
-    background-color: var(--card-detail-color);
-    margin-bottom: 30px;
-    margin-right: 20px;
-    border-radius: 5px;
-    box-shadow: 3px 5px 6px rgb(0 0 0 / 0.4);
+.board>.card {
+  background-color: var(--card-detail-color);
+  margin-bottom: 30px;
+  margin-right: 20px;
+  border-radius: 5px;
+  box-shadow: 3px 5px 6px rgb(0 0 0 / 0.4);
 }
 
-.board > .card > div {
-    background-color: var(--card-color);
-    width: calc(100% - 5px);
-    height: 100%;
-    margin-left: auto;
-    border-radius: 0px 5px 5px 0px;
-    padding: 5px;
+.board>.card>div {
+  background-color: var(--card-color);
+  width: calc(100% - 5px);
+  height: 100%;
+  margin-left: auto;
+  border-radius: 0px 5px 5px 0px;
+  padding: 5px;
 }
 
 .card_title {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .card_text {
-    font-family: var(--card-font-family);
-    font-size: 18px;
-    font-weight: 400;
-    margin-top: 5px;
+  font-family: var(--card-font-family);
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 5px;
 }
 
 footer {
-    background-color: var(--footer-backc);
-    grid-column: 1 /-1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  background-color: var(--footer-backc);
+  grid-column: 1 /-1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 footer p {
-    font-size: 10px;
-    font-weight: 100;
-    color: var(--footer-font-color);
+  font-size: 10px;
+  font-weight: 100;
+  color: var(--footer-font-color);
 }
 
-footer p > a {
-    text-decoration: none;
-    color: var(--footer-link-color);
+footer p>a {
+  text-decoration: none;
+  color: var(--footer-link-color);
 }
 
-footer p > a:hover {
-    text-decoration: none;
-    color: var(--footer-link-hover);
+footer p>a:hover {
+  text-decoration: none;
+  color: var(--footer-link-hover);
 }
